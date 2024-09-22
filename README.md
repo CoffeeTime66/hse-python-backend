@@ -1,3 +1,11 @@
+# Запуск домашек
+
+## ДЗ 1
+Зависимости requirements.txt в корне
+Запуск:
+- через bat файл (run_main_and_tests.bat)
+- uvicorn main:app из HW_1
+
 # Python Backend
 
 - [Репозиторий с примерами](https://github.com/katunilya/hse-python-backend) -
