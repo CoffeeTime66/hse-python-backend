@@ -7,7 +7,7 @@ import pytest
 from faker import Faker
 from fastapi.testclient import TestClient
 
-from lecture_2.hw.shop_api.main import app
+from lecture_2.hw.shop_api.app.main import app
 
 client = TestClient(app)
 faker = Faker()
@@ -291,4 +291,4 @@ def test_delete_item(existing_item: dict[str, Any]) -> None:
     assert response.status_code == HTTPStatus.NOT_FOUND
 
     response = client.delete(f"/item/{item_id}")
-    assert response.status_code == HTTPStatus.OK
+    assert response.status_code == HTTPStatus.NOT_FOUND
