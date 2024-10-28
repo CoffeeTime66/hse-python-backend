@@ -3,9 +3,9 @@ from fastapi import APIRouter, Depends, status, Body, HTTPException
 from sqlalchemy.orm import Session
 from starlette.responses import JSONResponse
 
-from . import crud, models, schemas
+import crud, models, schemas
 
-from .database import get_session_local, engine
+from database import get_session_local, engine
 
 models.base.Base.metadata.create_all(bind=engine)
 

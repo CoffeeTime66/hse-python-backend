@@ -2,8 +2,8 @@ from typing import List
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
-from ..models.base import association_table
-from ..models.cart import Cart
+from models import association_table
+from models import Cart
 
 
 def create_cart(db: Session) -> Cart:
